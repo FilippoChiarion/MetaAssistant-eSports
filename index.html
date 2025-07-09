@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,29 +14,29 @@
     <main>
         <section>
           <div>
-            <h2 class="title">Assistente de Meta</h2>
+            <h2 class="title">Meta Assistant</h2>
             <p>
-              Pergunte sobre estratégias, build e dicas para seus jogos!
+              Ask about strategies, builds, and tips for your games!
             </p>
 
             <form id="form">
-              <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+              <input id="apiKey" type="password" placeholder="Enter your Gemini API KEY" required>
 
               <select id="gameSelect">
-                <option value="">Selecione um jogo</option>
+                <option value="">Select a game</option>
                 <option value="valorant">Valorant</option>
                 <option value="lol">League of Legends</option>
                 <option value="csgo">CS:GO</option>
               </select>
 
-              <input id="questionInput" type="text" placeholder="Ex: Melhor build pra ADC..." required>
+              <input id="questionInput" type="text" placeholder="Ex: Best build for ADC..." required>
 
               <button id="askButton">
-                Perguntar
+                Ask
               </button>
             </form>
 
-            <div id="aiResponse">
+            <div id="aiResponse" class="hidden">
               <div class="response-content">
 
               </div>
@@ -45,6 +45,7 @@
         </section>
     </main>
 
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
